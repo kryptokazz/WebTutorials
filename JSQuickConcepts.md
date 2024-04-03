@@ -465,9 +465,47 @@ innerFn(); // Prints "I am outer" because of lexical scoping
 ### Array.isArray
 ```javascript
 alert(Array.isArray([])); //true
-
-
-
 ```
+
+### Pascals Triangle
+```javascript
+
+function generatePascalsTriangle(rows) {
+    const triangle = [];
+
+    // Loop through each row
+    for (let i = 0; i < rows; i++) {
+        triangle[i] = [];
+
+        // Fill the first and last values of each row with 1
+        triangle[i][0] = 1;
+        triangle[i][i] = 1;
+
+        // Calculate values for the rest of the row
+        for (let j = 1; j < i; j++) {
+            triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
+        }
+    }
+
+    return triangle;
+}
+
+function printPascalsTriangle(triangle) {
+    // Calculate the maximum width of the triangle
+    const maxWidth = triangle[triangle.length - 1].join(" ").length;
+
+    // Loop through each row and print its values centered
+    for (let i = 0; i < triangle.length; i++) {
+        const row = triangle[i].join(" ");
+        const padding = " ".repeat((maxWidth - row.length) / 2);
+        console.log(padding + row);
+    }
+}
+
+const rows = 7;
+const pascalsTriangle = generatePascalsTriangle(rows);
+console.log(`Pascal's Triangle with ${rows} rows (centered):`);
+printPascalsTriangle(pascalsTriangle);
+
 
 
