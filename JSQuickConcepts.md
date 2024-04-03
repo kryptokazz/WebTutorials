@@ -462,3 +462,12 @@ function outerFunction() {
 const innerFn = outerFunction();
 innerFn(); // Prints "I am outer" because of lexical scoping
 ```
+### Array.isArray
+```javascript
+alert(Array.isArray([])); //true
+
+
+
+```
+
+
