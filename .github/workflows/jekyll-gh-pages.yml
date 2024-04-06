@@ -24,7 +24,7 @@ jobs:
 
       - name: Merge Markdown Files
         run: |
-          cat *.md > merged.md
+          cat *.md > README.md
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
