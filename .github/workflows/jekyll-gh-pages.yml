@@ -23,13 +23,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Copy Markdown Files
-        run: |
-          cp ESversions.md ./_posts/ESversions.md
-          cp JSQuickConcepts.md ./_posts/JSQuickConcepts.md
-          cp README.md ./_posts/README.md
-          cp RemoveDuplicatesSortedArray.md ./_posts/RemoveDuplicatesSortedArray.md
-          cp TS.md ./_posts/TS.md
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
