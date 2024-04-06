@@ -24,7 +24,7 @@ jobs:
 
       - name: Merge Markdown Files
         run: |
-          cat ESVersions.md JSQuickConcepts.md README.md RemoveDuplicatesSortedArray.md TS.md > merged.md
+          cat *.md > merged.md
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
