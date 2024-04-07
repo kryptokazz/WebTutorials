@@ -1,6 +1,5 @@
 ### Question 1
 Compare and contrast the #name and age fields
-
 ```typescript
 
 export class Person {
@@ -13,7 +12,6 @@ export class Person {
 
 
 ```
-
 ### Question 2 
 ```typescript
 const a = "Frontend Masters"
@@ -37,7 +35,6 @@ let val =
   console.log(val) // ['h', 'e', 'l', 'l', 'o']
 
 // str.split("") 
-
 ```
 
 ### Question 4
