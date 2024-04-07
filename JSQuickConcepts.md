@@ -462,6 +462,7 @@ function outerFunction() {
 const innerFn = outerFunction();
 innerFn(); // Prints "I am outer" because of lexical scoping
 ```
+
 ### Array.isArray
 ```javascript
 alert(Array.isArray([])); //true
@@ -506,6 +507,6 @@ const rows = 7;
 const pascalsTriangle = generatePascalsTriangle(rows);
 console.log(`Pascal's Triangle with ${rows} rows (centered):`);
 printPascalsTriangle(pascalsTriangle);
-
+```
 
 
