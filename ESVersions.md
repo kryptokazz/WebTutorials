@@ -236,11 +236,6 @@ b ??= 3; // b will be assigned 3 because it's undefined
 ```
 
 ## ES14 (2023) 
-let arr = [3, 1, 2];
-let sortedArr = arr.toSorted();
-console.log(sortedArr);  // Output: [1, 2, 3]
-console.log(arr);  // Output: [3, 1, 2]
-
 ```javascript
 let arr = [3, 1, 2];
 let sortedArr = arr.toSorted();
